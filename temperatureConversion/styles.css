@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: whitesmoke;
+}
+
+.wrapper {
+    border: 2px solid #fff;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 2px solid black;
+    width: 400px;
+    height: 400px;
+    padding: 10px 10px 10px 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+.wrapper h2 {
+    font-size: 2em;
+    margin: 20px 0;
+    font-weight: 600;
+}
+
+.wrapper .btn {
+    border: none;
+    outline: none;
+    color: #fff;
+    padding: 10px 10px 10px 10px;
+    margin: 5px 0;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+
+.btn button {
+    background-color: hsl(0, 100%, 60%);
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: hsl(0, 100%, 50%);
+}
+
+.input-box {
+    border: none;
+    outline: none;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-box textarea {
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    resize: none;
+    width: 100px;
+    height: 40px;
+    padding: 10px;
+}
+
+.convert-label {
+    padding: 10px 0 0 0;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    font-size: 1em;
+    font-weight: 900;
+}
+
+.output-box {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+}
