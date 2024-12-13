@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: #3794ff;
+}
+
+.container {
+    position: relative;
+    width: 480px;
+    background-color: #fff;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.heading {
+    font-size: 2.5em;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 40px;
+    color: #3794ff;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 50px;
+}
+
+.entryarea {
+    position: relative;
+    height: 60px;
+    line-height: 60px;
+    nav-right: 12px 0;
+}
+
+.entryarea input,
+.entryarea textarea {
+    outline: none;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    font-size: 1.2em;
+    line-height: 20px;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+    padding-right: 5em;
+    background: transparent;
+    transition: 0.1s ease;
+}
+
+.entryarea .uil {
+    position: absolute;
+    right: 30px;
+    font-size: 1.8em;
+    z-index: 11;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.entryarea textarea {
+    line-height: 20px;
+    height: 100px;
+    padding: 20px;
+    font-size: 1em;
+    resize: vertical;
+}
+
+.entryarea .labelline {
+    position: absolute;
+    font-size: 1.2em;
+    color: rgba(0, 0, 0, 0.6);
+    padding: 0 5px;
+    margin: 0 20px;
+    background: #fff;
+    transition: 0.2s ease;
+}
+
+#btn {
+    margin-top: 80px;
+    font-size: 1.6em;
+    font-weight: 500;
+    border: none;
+    border-radius: 10px;
+    background: #3794ff;
+    color: #fff;
+    padding: 16px 0;
+    cursor: pointer;
+}
