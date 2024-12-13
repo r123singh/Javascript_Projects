@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins'
+}
+
+body {
+    display: flex;
+    align-items: center;
+}
+
+.sidebar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    font-size: large;
+    width: 250px;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: #030111e1;
+
+}
+
+.logo {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: left;
+    font-size: 2rem;
+    color: white;
+    font-weight: 500;
+    padding: 10px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+ul li {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 10px;
+    padding: 20px;
+    color: white;
+    font-size: 1.3rem;
+}
+
+
+
+li a {
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+}
+
+.main {
+
+    background: #eee;
+    width: 100%;
+}
+
+.main .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.header .welcome {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.welcome h2 {
+    font-weight: 500;
+    color: rgba(102, 12, 12, 0.986);
+}
+
+.header .searchbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 8px;
+    gap: 10px;
+    border: 1px solid #33333350;
+    border-radius: 5px;
+    font-size: 20px;
+    color: #333;
+}
+
+.searchbox input {
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 15px;
+}
+
+.searchbox .userimg {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+
+.main .stats {
+    display: flex;
+    background: rgb(167, 6, 6);
+    justify-content: space-between;
+    padding: 1rem;
+    margin: 2rem;
+    border-radius: 20px;
+}
+
+.stats .card {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 240px;
+    flex-wrap: wrap;
+    color: rgb(66, 2, 2);;
+}
+
+.card i {
+    font-size: 1.2rem;
+    color: rgb(167, 6, 6);
+}
+
+
+.finance {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.finance .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    color: rgb(102, 4, 4);
+}
+
+.title i {
+    font-size: 30px;
+}
+
+#pieChart {
+    height: 300px;
+    width: 600px;
+    background: transparent;
+}
+
+#lineChart {
+    height: 300px;
+    width: 600px;
+    background: transparent;
+
+}
+
+.department {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#barChart {
+    width: 600px;
+    height: 300px;
+}
+
+.department .doctor {
+    display: flex;
+    flex-direction: column;
+}
+
+.department .tabular {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+}
+
+.department .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    color: rgb(102, 4, 4);
+}
+
+.tabular table {
+    border-collapse: collapse;
+}
+
+thead {
+    background: rgba(113, 99, 186, 255);
+    color: #fff;
+}
+
+thead th {
+    text-align: left;
+    padding: 10px;
+}
+
+tbody {
+    background: #f2f2f2;
+}
+
+td {
+    padding: 15px;
+    font-size: 14px;
+    color: #333;
+}
+
+tr:nth-child(even) {
+    background: #fff;
+}
