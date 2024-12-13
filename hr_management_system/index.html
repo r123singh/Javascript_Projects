@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Dashboard</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='styles.css'>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+</head>
+
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="orgs">
+            <img
+                src="https://cdn.dribbble.com/users/6487750/avatars/normal/9bfce022a9a629ee36d31ce439020ba2.png?1714974300" />
+            <span>TalentTrack</span>
+            <i class='bx bx-expand-vertical'></i>
+        </div>
+        <div class="search-box">
+            <i class='bx bx-search'></i>
+            <input type="text" placeholder="Search">
+        </div>
+        <div class="main-menu">
+            <h3>MAIN MENU</h3>
+            <ul>
+                <li><i class='bx bx-border-all'></i>
+                    <a href="">Dashboard</a>
+                </li>
+                <li><i class='bx bx-task'></i>
+                    <a href="">Task</a>
+                </li>
+                <li><i class='bx bx-calendar-week'></i>
+                    <a href="">Calendar</a>
+                </li>
+                <li><i class='bx bx-cog'></i>
+                    <a href="">Settings</a>
+                </li>
+                <li><i class='bx bx-help-circle'></i>
+                    <a href="">Help Center</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="main-menu">
+            <h3>TEAM MANAGEMENT</h3>
+            <ul>
+                <li><i class='bx bx-line-chart'></i>
+                    <a href="">Performance</a>
+                </li>
+                <li><i class='bx bx-dollar-circle'></i>
+                    <a href="">Payroll</a>
+                </li>
+                <li><i class='bx bx-notepad'></i>
+                    <a href="">Invoices</a>
+                </li>
+                <li><i class='bx bx-group'></i>
+                    <a href="">Employees</a>
+                </li>
+                <li><i class='bx bx-user-plus'></i>
+                    <a href="">Hiring</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="main-menu">
+            <i></i>
+            <h3>LIST</h3>
+            <ul>
+                <li><i class='bx bx-wallet-alt'></i>
+                    <a href="">Salary </a>
+                </li>
+                <li><i class='bx bx-money'></i>
+                    <a href="">Compensation </a>
+                </li>
+                <li><i class='bx bx-note bx-rotate-270'></i>
+                    <a href="">Project-specific </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <div class="header">
+            <h4>Payroll</h4>
+            <div class="alert">
+                <i class='bx bx-message-square-dots'></i>
+                <i class='bx bx-bell'></i>
+                <i class='bx bx-user-plus'></i>Invite
+            </div>
+        </div>
+
+        <div class="action">
+            <div class="date">
+                <input type="text" value="August - 28 September 2024">
+                <i class='bx bx-chevron-down'></i>
+            </div>
+            <div class="btns">
+                <div class="export">
+                    <i class='bx bx-upload'></i>Export
+                </div>
+                <div class="payroll">
+                    <i class='bx bx-plus'></i>New Payroll
+                </div>
+            </div>
+        </div>
+        <div class="info-box">
+            <div class="info">
+                <div class="msg">
+                    <i class='bx bxs-info-circle'></i>
+                    Payroll submissions are due in 2 days. Kindly review and finalize all payroll details for
+                    employees within the given time frame
+                </div>
+                <div class="detail">
+                    <a href="#">More details</a>
+                    <i class='bx bx-x'></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="metrics">
+            <div class="card">
+                <div class="title">
+                    <h4>
+                        Payrolls Cost
+                    </h4>
+                </div>
+                <div class="increase">
+                    <h2>$12,900</h2>
+                    <p><i class='bx bx-up-arrow-alt'></i>13%
+                        <span class="entity">From last month</span>
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="title">
+                    <h4>
+                        Total Expense
+                    </h4>
+                </div>
+                <div class="increase">
+                    <h2>$7,096</h2>
+                    <p><i class='bx bx-up-arrow-alt'></i>6.12%
+                        <span class="entity">From last month</span>
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="title">
+                    <h4>
+                        Pending Payments
+                    </h4>
+                </div>
+                <div class="increase">
+                    <h2>$5,453</h2>
+                    <p><i class='bx bx-up-arrow-alt'></i>13%
+                        <span class="entity">From last month</span>
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="title">
+                    <h4>
+                        Total Payrolls
+                    </h4>
+                </div>
+                <div class="decrease">
+                    <h2>976</h2>
+                    <p><i class='bx bx-down-arrow-alt'></i>20
+                        <span class="entity">Employees</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Charts area -->
+        <section>
+            <header>
+                <h3>Total Payrolls</h3>
+                <div class="time">
+                    <span class="selected">Day</span>
+                    <span class="unselected">Week</span>
+                    <span class="unselected">Month</span>
+                </div>
+            </header>
+            <main>
+                <ul>
+                    <li><i class='bx bxs-square-rounded' style='color:blue'></i>Monthly Payroll</li>
+                    <li><i class='bx bxs-square-rounded' style="color: orange;"></i>Overtime</li>
+                    <li><i class='bx bxs-square-rounded' style="color: green;"></i>Bonuses &Incentives</li>
+                </ul>
+                <div id="barchart_material"></div>
+            </main>
+        </section>
+
+        <!-- table area -->
+        <section>
+            <header>
+                <h3>Payroll List</h3>
+                <div class="filters">
+                    <div class="search">
+                        <i class='bx bx-search'></i>
+                        <input type="text" placeholder="Search">
+                    </div>
+                    <div class="list">
+                        <span>All Status</span>
+                        <i class='bx bx-chevron-down'></i>
+                    </div>
+                    <div class="list">
+                        <span>All Role</span>
+                        <i class='bx bx-chevron-down'></i>
+                    </div>
+                </div>
+            </header>
+            <div class="table-container">
+            <table>
+                <thead>
+                    <th><input type="checkbox"></th>
+                    <th>Payroll ID</th>
+                    <th>Employee name</th>
+                    <th>Role</th>
+                    <th>Total salary</th>
+                    <th>Issued date</th>
+                    <th>Status</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>138PLK190</td>
+                        <td>Alesha Dan</td>
+                        <td>Project Manager</td>
+                        <td>$3,785.00</td>
+                        <td>Aug 21, 10:00 AM</td>
+                        <td>
+                            <div class="complete"><i class='bx bx-check-circle'></i>Completed</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>138PLK190</td>
+                        <td>Alesha Dan</td>
+                        <td>Project Manager</td>
+                        <td>$3,785.00</td>
+                        <td>Aug 21, 10:00 AM</td>
+                        <td>
+                            <div class="complete"><i class='bx bx-check-circle'></i>Completed</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>138PLK190</td>
+                        <td>Alesha Dan</td>
+                        <td>Project Manager</td>
+                        <td>$3,785.00</td>
+                        <td>Aug 21, 10:00 AM</td>
+                        <td>
+                            <div class="pending"><i class='bx bx-loader'></i>Pending</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>138PLK190</td>
+                        <td>Alesha Dan</td>
+                        <td>Project Manager</td>
+                        <td>$3,785.00</td>
+                        <td>Aug 21, 10:00 AM</td>
+                        <td>
+                            <div class="pending"><i class='bx bx-loader'></i>Pending</div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+        </section>
+
+    </div>
+    <script src='script.js'></script>
+</body>
+
+</html>

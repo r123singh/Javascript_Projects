@@ -1,0 +1,470 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    background-color: #f5f5f5;
+    gap: 2px;
+}
+
+.sidebar {
+    position: sticky;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    width: 260px;
+    background: transparent;
+    height: 100vh;
+    padding: 1rem 30px;
+    overflow: hidden;
+    transition: 0.5s all linear;
+}
+
+.sidebar .search-box {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 200px;
+    margin-top: 10px;
+    background: transparent;
+    padding: 7px 10px;
+    border-radius: 7px;
+    border: 1px solid gray;
+    gap: 5px;
+    font-size: 20px;
+}
+
+.search-box input {
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+
+.sidebar .orgs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    padding: 5px 5px;
+    border-radius: 10px;
+    width: 200px;
+    margin-top: 5px;
+    gap: 12px;
+}
+
+.orgs img {
+    height: 40px;
+    width: 40px;
+    border-radius: 15px;
+}
+
+.orgs i {
+    translate: 10px;
+}
+
+.sidebar .main-menu {
+    margin-top: 20px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-menu h3 {
+    font-weight: 600;
+    color: black;
+    font-size: 0.85rem;
+}
+
+.main-menu ul {
+    list-style: none;
+    text-decoration: none;
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.main-menu li {
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.main-menu a {
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+}
+
+.main-menu i {
+    font-size: 23px;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+}
+
+.container .header {
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 1.7rem 1rem 1rem 1rem;
+    border-radius: 10px 10px 0 0;
+}
+
+.header h4 {
+    font-weight: 500;
+}
+
+.header .alert {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+}
+
+.alert i {
+    border: 1px solid black;
+    font-size: 1.5rem;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.container .action {
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+    margin-top: 2px;
+    align-items: center;
+    padding: 1rem;
+}
+
+.action .date {
+    display: flex;
+    border: 1px solid #f5f5f5;
+    padding: 10px;
+    border-radius: 5px;
+    gap: 5px;
+}
+
+.date input {
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+
+.action .btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.btns .export {
+    display: flex;
+    border: 2px solid #f5f5f5;
+    padding: 10px;
+    border-radius: 10px;
+    gap: 5px;
+}
+
+.btns .payroll {
+    display: flex;
+    border: 2px solid #f5f5f5;
+    padding: 10px 15px;
+    border-radius: 10px;
+    gap: 5px;
+    background: black;
+    color: white;
+}
+
+.container .info-box {
+    display: block;
+    background: #fff;
+    border: none;
+    padding: 5px 20px;
+}
+
+.info-box .info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f5f5f5;
+    border: 2px solid skyblue;
+    padding: 7px 10px;
+    border-radius: 10px;
+}
+
+.info .msg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    font-size: 17px;
+}
+
+.msg i{
+    color: rgba(0, 0, 255, 0.712);
+    font-size: 22px;
+}
+
+.info .detail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.detail a {
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.detail i {
+    font-size: 1.5rem;
+    color: rgba(0, 0, 0, 0.568);
+}
+
+.container .metrics {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    padding: 10px 20px;
+    gap: 10px;
+}
+
+.metrics .card {
+    border: 2px solid gray;
+    background: #f5f5f5;
+    border-radius: 10px;
+    width: 320px;
+    height: 135px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    transition: all 0.5s ease-in-out;
+    position: relative;
+}
+
+.card .title {
+    background: #fff;
+    border-radius: 10px 10px 0 0;
+    padding: 0.85rem;
+}
+
+.title h4{
+    font-weight: 600;
+}
+
+.card .increase {
+    padding: 1rem;
+}
+
+.increase p{
+    margin-top: 5px;
+    color: rgb(5, 131, 5);
+    font-size: 15px;
+}
+
+.increase .entity {
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.685);
+}
+
+.card .decrease {
+    padding: 1rem;
+}
+
+.decrease p{
+    color: rgb(131, 9, 5);
+    font-size: 17px;
+    font-weight: 800;
+    margin-top: 5px;
+}
+
+.decrease .entity {
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.685);
+    font-weight: 400;
+}
+
+.container section {
+    background: #fff;
+}
+
+.container header {
+    background: #fff;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 10px 10px 0 0 ;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #f5f5f5;
+}
+
+header .time {
+    background: skyblue;
+    display: flex;
+    gap: 20px;
+    border-radius: 10px;
+    padding: 3px;
+    font-size: 15px;
+}
+
+header .selected {
+    background: white;
+    border-radius: 10px;
+    padding: 10px 20px; 
+    border: 1px solid #f5f5f5;
+}
+
+header .unselected{
+    background: transparent;
+    padding: 10px;
+}
+
+header h3 {
+    font-weight: 500;
+}
+
+.container main {
+    margin-left: 20px;
+    border: 2px solid #f5f5f5;
+    margin-right: 20px;
+}
+
+.container main ul{
+    display: flex; 
+    gap: 20px;
+    padding: 1rem;
+}
+
+main ul li {
+    list-style: none;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    font-size: 16px;
+}
+
+#barchart_material {
+    margin-top: 10px;
+}
+
+header .filters {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.filters .search {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 11px;
+    border: 2px solid rgba(0, 0, 0, 0.329);
+    border-radius: 10px;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.63);
+}
+
+.search input {
+    outline: none;
+    border: none;
+    background: transparent;
+    font-size: 14px;
+    width: 210px;
+}
+
+.filters .list {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.329);
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+.table-container {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    background: rgb(211, 226, 231);
+}
+
+th {
+    padding: 13px;
+    text-align: left;
+    color: #333;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+tbody {
+    background-color: rgba(76, 181, 223, 0.096);
+}
+
+td {
+    padding: 15px;
+    font-size: 15px;
+    color: #333;
+}
+
+tbody .complete {
+    background: rgb(155, 235, 155);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: fit-content;
+    gap: 5px;
+    padding: 5px;
+    font-size: 13px;
+    border-radius: 5px;
+    color: rgb(15, 109, 15);
+    border: 1px solid green;
+    font-weight: 400;
+
+}
+
+tbody .pending {
+    background: rgba(255, 166, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: fit-content;
+    gap: 5px;
+    padding: 5px 10px 5px 5px;
+    font-size: 13px;
+    border-radius: 5px;
+    color: rgb(255, 0, 0);
+    border: 1px solid red;
+    font-weight: 400;
+}
